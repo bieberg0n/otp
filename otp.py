@@ -2,7 +2,7 @@ import queue
 from dataclasses import dataclass
 from typing import Any
 from threading import Thread
-from utils import log
+from .utils import log
 
 
 def spawn(target, args=(), daemon: bool = True):
