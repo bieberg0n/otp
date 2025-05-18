@@ -1,12 +1,14 @@
 import otp
 from utils import log, plog
 from example import Config
+from example_app import WebServer
 
 
 def start_supervisor():
     supervisor = otp.Supervisor()
     supervisor.start([
-        Config
+        Config,
+        WebServer,
     ])
 
 
